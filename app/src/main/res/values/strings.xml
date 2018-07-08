@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">My Task Manager</string>
+    <string name="task_list">Task List</string>
+    <string name="next_task">Next Task</string>
+</resources>
