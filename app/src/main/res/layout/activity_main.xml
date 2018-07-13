@@ -5,19 +5,33 @@
     android:orientation="vertical"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    android:layout_weight="0"
     android:layout_height="match_parent"
+    android:background="@drawable/bg_gradient"
     tools:context=".MainActivity">
 
-    <Button
-        android:id="@+id/show_task_list"
+    <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/task_list"/>
-
-    <Button
-        android:id="@+id/create_task"
+        android:layout_weight="1">
+        <Button
+            android:id="@+id/show_task_list"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="32sp"
+            android:layout_centerInParent="true"
+            android:text="@string/task_list"/>
+    </RelativeLayout>
+    <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/next_task"/>
-
+        android:layout_weight="1">
+        <Button
+            android:id="@+id/create_task"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/next_task"
+            android:textSize="32sp" />
+    </RelativeLayout>
 </LinearLayout>

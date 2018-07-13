@@ -22,11 +22,8 @@ class MainActivity : AppCompatActivity() {
         }
         createTask.setOnClickListener {
             val intent = Intent(this, NoteCreation::class.java).apply {
-
             }
             startActivity(intent)
-
-//            Toast.makeText(this, "Create task.", Toast.LENGTH_SHORT).show()
         }
     }
 }
